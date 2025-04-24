@@ -39,23 +39,48 @@ Developed by: Annie Jenifsika A
 
 RegisterNumber:212224230019
 
+module exp_2(A,B,C,D,F1);
+ 
+ input A,B,C,D;
+ 
+ output F1;
+ 
+ wire x1,x2,x3,x4,x5;
+ 
+ assign x1=(~A)&(~B)&(~C)&(~D);
+ 
+ assign x2=(A)&(~C)&(~D);
+ 
+ assign x3=(~B)&(C)&(~D);
+ 
+ assign x4=(~A)&(B)&(C)&(D);
+ 
+ assign x5=(B)&(~C)&(D);
+ 
+ assign F1=x1|x2|x3|x4|x5;
+ 
+ endmodule
+
 */
-![Screenshot 2025-04-23 215707](https://github.com/user-attachments/assets/da4c86f7-1b86-4242-8892-d55326d84813)
+
 
 
 **RTL realization**
 
-![Screenshot 2025-04-23 215736](https://github.com/user-attachments/assets/6945d895-1006-441e-9e08-e6d6a64e967f)
+![screenshot(1)](https://github.com/user-attachments/assets/69050508-57ce-4e1a-82aa-c7864c26e4bc)
+
 
 **Output:**
 
-![Screenshot 2025-04-23 215755](https://github.com/user-attachments/assets/6dbec21e-1e01-4bb1-93be-d26fd5fad7b7)
+![screenshot(2)](https://github.com/user-attachments/assets/43304971-04b9-409f-9834-2bdcf6a98bf6)
+
 
 **RTL**
 
 **Timing Diagram**
 
-![Screenshot 2025-04-23 215813](https://github.com/user-attachments/assets/53c73ca0-0400-4ad1-bb74-c74f40a8edea)
+![screenshot(3)](https://github.com/user-attachments/assets/f2b69ab2-bb9d-4716-b9f3-3192dec5ac52)
+
 
 **Result:**
 
